@@ -1,0 +1,24 @@
+.box1{
+    text-align: justify;
+    border: 1px solid #FF0000;
+    /* Độ rộng của box */
+    width: 300px;
+    /* KHoảng đệm bên trong box */
+    padding: 20px;
+    /* Khoảng đệm bên ngoài box */
+    margin: 20px;
+    /* Màu nền */
+    background-color: aliceblue;
+    /* Ảnh nền */
+    background-image: url('../images/50-Beautiful-and-Minimalist-Presentation-Backgrounds-05.jpg');
+    /* kích thước ảnh nền */
+    background-size: 100px;
+    /* Ảnh lặp */
+    background-repeat: no-repeat;
+    /* ĐỊnh vị vị trí cho ảnh nền */
+    background-position: center right;
+    /* bo viền */
+    border-radius: 10px 20px 30px 40px;
+    /* Đổ bóng cho box */
+    box-shadow: inset 5px 5px 4px blue;
+}

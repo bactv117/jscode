@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px 0;
+}
+
+.clo{
+    width: 50%;
+    float: left;
+
+}
+
+.clao{
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 8px;
+}
+
+.clao img{
+    width: 100%;
+}
+
+.clao a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clao a:hover{
+    color: red;
+}

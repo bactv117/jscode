@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Thay đổi style cho 1 phần tử -->
+    <!-- <div id="divanh">
+      <img src="img/anhmap.jpg" alt="" width="300px" />
+    </div>
+    <button id="btn" onclick="anHien();">Ẩn/Hiện</button>
+    <script>
+      function anHien() {
+        var divanh = document.getElementById("divanh");
+        divanh.style.display = "none";
+        if (divanh.style.display == "none") {
+          divanh.style.display = "block";
+        } else {
+          divanh.style.display = "none";
+        }
+      }
+    </script> -->
+
+    <!-- Thay đổi style cho nhiều phần tử: getElementsByTagName -->
+    <!-- <style>
+      div {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 5px;
+      }
+    </style>
+    <div id="red" class="color"></div>
+    <div id="orange" class="color"></div>
+    <div id="yellow" class="color"></div>
+    <div id="green" class="color"></div>
+    <div id="blue" class="color"></div>
+    <div id="indigo" class="color"></div>
+    <div id="violet" class="color"></div>
+    <button onclick="cauVong();">Hiện bảng màu</button>
+    <script>
+      function cauVong() {
+        //var divs = document.getElementsByTagName("div");
+        var divs = document.getElementsByClassName("color");
+        console.log(divs);
+        for (let i = 0; i < divs.length; i++) {
+          divs[i].style.background = divs[i].id;
+        }
+      }
+    </script> -->
+
+    <!-- Thêm/Xóa Class: classList.add / classList.remove / classList.toggle -->
+    <!-- <style>
+        .andiv{display: none;}
+    </style>
+    <div id="divanh">
+        <img src="game.jpg" alt="" width="300px">
+    </div>
+    <button id="btn" onclick="themClass();">Ẩn</button>
+    <button id="btn" onclick="xoaClass();">Hiện</button>
+    <button id="btn" onclick="cdClass();">Ẩn/Hiện</button>
+    <script>
+        // function anHien(){
+        //     var divanh = document.getElementById("divanh");
+        //     if(divanh.style.display == "none"){
+        //         divanh.style.display = "block";
+        //     }else{
+        //         divanh.style.display = "none";
+        //     }
+        // }
+        function themClass(){
+            document.getElementById("divanh").classList.add("andiv");
+        }
+        function xoaClass(){
+            document.getElementById("divanh").classList.remove("andiv");
+        }
+        function cdClass(){
+            document.getElementById("divanh").classList.toggle("andiv");
+        }
+    </script> -->
+
+    <!-- Thao tác thuộc tính: setAttribute -->
+    <!-- <style>
+        div{width: 100px;height: 100px;background: #ccc;border: 1px solid transparent;margin-bottom: 5px;}
+        .hinhtron{border-radius: 50%;}
+    </style>
+    <div id="thuoctinh" class="hinhvuong"></div>
+    <button onclick="thayDoiThuocTinh1();">Thay đổi thuộc tính 1</button>
+    <button onclick="thayDoiThuocTinh2();">Thay đổi thuộc tính 2</button>
+    <script>
+        function thayDoiThuocTinh1(){
+            var thuoctinh = document.getElementById("thuoctinh");
+            thuoctinh.setAttribute("style","background:yellow;border:1px solid #ccc;");
+        }
+        function thayDoiThuocTinh2(){
+            var thuoctinh = document.getElementById("thuoctinh");
+            thuoctinh.setAttribute("class","hinhtron");
+        }
+    </script> -->
+
+    <!-- Chỉ định sự kiện onclick -->
+    <!-- <div id="divanh">
+        <img src="game.jpg" alt="" width="300px">
+    </div>
+    <button id="btn1" onclick="anHien();">Ẩn/Hiện 1</button>
+    <button id="btn2">Ẩn/Hiện 2</button>
+    <button id="btn3">Ẩn/Hiện 3</button>
+    <script>
+        function anHien(){
+            var divanh = document.getElementById("divanh");
+            if(divanh.style.display == "none"){
+                divanh.style.display = "block";
+            }else{
+                divanh.style.display = "none";
+            }
+        }
+        document.getElementById("btn2").onclick = function() { anHien(); };
+        document.getElementById("btn3").addEventListener("click", anHien);
+    </script> -->
+
+    <!-- Sự kiện onload -->
+    <!-- <a href="https://caodang.fpt.edu.vn" id="link">Link</a> -->
+    <!-- <script>
+        // var nodelink = document.getElementById("link");
+        // alert(nodelink.href);
+        window.onload = function() {
+            var nodelink = document.getElementById("link");
+            alert(nodelink.href);
+        }
+    </script>
+    <a href="https://caodang.fpt.edu.vn" id="link">Link</a>
+    <script src="js.js"></script> -->
+
+    <!-- Hiệu ứng Rollover -->
+    <div id="divanh">
+      <img
+        src="img copy/anh0.jpg"
+        alt=""
+        width="300px"
+        id="anh"
+        onmouseover="diChuotVao();"
+        onmouseout="diChuotRa();"
+      />
+    </div>
+    <script>
+      function diChuotVao() {
+        document.getElementById("anh").src = "img copy/anh1.jpg";
+      }
+      function diChuotRa() {
+        document.getElementById("anh").src = "img copy/anh0.jpg";
+      }
+      // var anhover = new Image();
+      // var anhout = new Image();
+      // function taiTruocAnh(){
+      //     anhover.src = "bongda.jpg";
+      //     anhout.src = "game.jpg";
+      // }
+      // function diChuotVao(){
+      //     document.getElementById("anh").src =  anhover.src;
+      // }
+      // function diChuotRa(){
+      //     document.getElementById("anh").src = anhout.src;
+      // }
+      // window.onload = function() {
+      //     taiTruocAnh();
+      // }
+    </script>
+
+    <!-- Slideshow -->
+    <!-- <div id="slideshow" style="width:300px">
+        <img src="slide0.jpg" alt="" width="100%" id="anh">
+    </div>
+    <button onclick="back();">Back</button>
+    <button onclick="next();">Next</button>
+    <script>
+        var anhSlide = [];
+        var anhHienTai = 0;
+        function taiTruocAnh(){
+            for(var i = 0; i < 3; i++){
+                anhSlide[i] = new Image();
+                anhSlide[i].src = "slide"+i+".jpg";
+            }
+        }
+        function next(){
+            if(anhHienTai < 2){
+                anhHienTai++;
+                document.getElementById("anh").src = anhSlide[anhHienTai].src;
+            }
+        }
+        function back(){
+            if(anhHienTai > 0){
+                anhHienTai--;
+                document.getElementById("anh").src = anhSlide[anhHienTai].src;
+            }
+        }
+        window.onload = function() {
+            taiTruocAnh();
+        }
+    </script> -->
+
+    <!-- Bản đồ ảnh: Map HTML -->
+    <!-- <img src="anhmap.jpg" alt="anhmap" usemap="#anhmap" width="400" height="379">
+    <map name="anhmap">
+        <area shape="rect" coords="34,44,270,350" title="Laptop" href="https://phucanh.vn" target="_blank">
+        <area shape="rect" coords="290,172,333,250" title="Phone" href="https://fptshop.com.vn" target="_blank">
+        <area shape="circle" coords="337,300,44" title="Coffee" href="https://www.highlandscoffee.com.vn" target="_blank">
+    </map> -->
+  </body>
+</html>

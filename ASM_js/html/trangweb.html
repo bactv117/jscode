@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/web.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../img/7.png" alt="" />
+      </div>
+
+      <div class="menu">
+        <div class="new_menu">
+          <li><a href="#">Trang Chủ</a></li>
+          <li><a href="#">Giới Thiệu</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+          <li><a href="#">Góp Ý</a></li>
+          <li><a href="#">Hỏi Đáp</a></li>
+
+          <u>
+            <input type="text" placeholder="Tìm kiếm" />
+            <button>Tìm kiếm</button>
+          </u>
+
+          <button id="cart">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            Giỏ Hàng
+          </button>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Giỏ Hàng</h5>
+                <span class="close">&times;</span>
+              </div>
+              <div class="modal-body">
+                <div class="cart-row">
+                  <span class="cart-item cart-header cart-column"
+                    >Sản Phẩm</span
+                  >
+                  <span class="cart-price cart-header cart-column">Giá</span>
+                  <span class="cart-quantity cart-header cart-column"
+                    >Số Lượng</span
+                  >
+                </div>
+                <div class="cart-items"></div>
+                <div class="cart-total">
+                  <strong class="cart-total-title">Tổng Cộng:</strong>
+                  <span class="cart-total-price">0VNĐ</span>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close-footer">
+                  Đóng
+                </button>
+                <button type="button" class="btn btn-primary order">
+                  Thanh Toán
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="../img/01.jpg" style="width: 100%" height="400px" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../img/02.png" style="width: 100%" height="400px" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../img/03.jpg" style="width: 100%" height="400px" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <article>
+      <div class="bgr_cd">
+        <div class="bgr">
+          <h1>Đếm ngược flash sale</h1>
+          <div id="clockdiv">
+            <div>
+              <span class="days"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div>
+              <span class="hours"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span class="minutes"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+              <span class="seconds"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <!-- content -->
+      <section class="wrapper">
+        <div class="products">
+          <ul>
+            <li class="main-product">
+              <div class="img-product">
+                <img class="img-prd" src="../img/04.jpg" alt="" />
+              </div>
+              <div class="content-product">
+                <h3 class="content-product-h3">Đầu thu phát sóng FPT</h3>
+                <div class="content-product-deltals">
+                  <div class="price">
+                    <span class="money">300$</span>
+                  </div>
+                  <button type="button" class="btn btn-cart">
+                    Thêm Vào Giỏ
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="main-product">
+              <div class="img-product">
+                <img class="img-prd" src="../img/05.jpg" alt="" />
+              </div>
+              <div class="content-product">
+                <h3 class="content-product-h3">SamSung Galaxy S22 Ultra</h3>
+                <div class="content-product-deltals">
+                  <div class="price">
+                    <span class="money">1500$</span>
+                  </div>
+                  <button type="button" class="btn btn-cart">
+                    Thêm Vào Giỏ
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="main-product">
+              <div class="img-product">
+                <img class="img-prd" src="../img/06.jpg" alt="" />
+              </div>
+              <div class="content-product">
+                <h3 class="content-product-h3">Laptop Huwei</h3>
+                <div class="content-product-deltals">
+                  <div class="price">
+                    <span class="money">2000$</span>
+                  </div>
+                  <button type="button" class="btn btn-cart">
+                    Thêm Vào Giỏ
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="clear"></div>
+    </article>
+
+    <article>
+      <div class="table_form">
+        <h1>Thông tin người mua hàng.</h1>
+        <div id="wrapper"></div>
+        <form action="" method="get" onsubmit="return valform()">
+          <label>Họ:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Họ"
+            class="form_control"
+          />
+
+          <br />
+
+          <label>Tên:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Tên"
+            class="form_control"
+          />
+
+          <br />
+
+          <label>Tuổi:</label>
+          <input
+            type="text"
+            name="age"
+            id="age"
+            placeholder="Tuổi"
+            class="form_control"
+          />
+
+          <br />
+
+          <label>Địa chỉ:</label>
+          <input
+            type="text"
+            name="diachi"
+            id="diachi"
+            placeholder="Địa chỉ"
+            class="form_control"
+          />
+
+          <br />
+          <input type="submit" value="submit" class="form_submit" />
+          <button class="form_cance">cance</button>
+        </form>
+      </div>
+    </article>
+
+    <script src="../js/web.js"></script>
+
+    <footer>
+      Địa chỉ: 235 Ngô Gia Tự, Phường Đức Giang, Quận Long Biên, Hà Nội
+      <br />
+      Hotline:0967168265
+      <br />
+      Email: fptshop&copy;.vn
+    </footer>
+  </body>
+</html>

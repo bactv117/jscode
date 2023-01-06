@@ -1,0 +1,19 @@
+article{
+    margin: 0px;
+    height: 700px;
+}
+article>h1{
+    margin: 0px;
+    color: green;
+}
+
+article>.form>.ma{
+    margin: 20px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.dk{
+    width: 600px;
+    height: 30px;
+}

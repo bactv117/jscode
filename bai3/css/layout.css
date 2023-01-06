@@ -1,0 +1,36 @@
+/* Reset tất cả các thẻ HTML */
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1020px;
+    /* để website vào giữa */
+    margin: auto;
+}
+
+header {
+   height: 50px;
+   background-color: orange; 
+}
+nav {
+    line-height: 40px;
+    background-color: green;
+}
+article {
+    width: 60%;
+    background-color: orangered;
+    height: 400px;
+    float: left;
+}
+aside {
+    width: 20%;
+    background-color: purple;
+    height: 400px;
+    float: left;
+}
+footer {
+    clear: both;
+    background-color: blue;
+    height: 50px;
+}

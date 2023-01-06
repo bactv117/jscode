@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lab10_bai2.css">
+</head>
+<body>
+    <form action="">
+        <div class="form_cla">
+        <label for="">Họ và tên</label>
+        <input type="text" class="form_control">
+        </div>
+        <br>
+        <div class="form_cla">
+            <label for="">Ngày sinh</label>
+            <input type="date" class="form_control">
+        </div>
+        <br>
+        <fieldset>
+            <legend>Giới tính</legend>
+            <input type="radio" name="gioitinh" > Nam
+            <input type="radio" name="gioi tinh"> Nữ
+        </fieldset>
+        <br>
+        <div class="form_cla">
+            <label for="">Điểm</label>
+            <input type="number" min="0" max="10" step="0.25" class="form_control">
+        </div>
+        <div class="form_cla">
+            <label for="">Nghề nghiệp</label>
+            <select class="form_control">
+                <option value="GV">Giáo Viên</option>
+                <option value="KS">Kỹ sư</option>
+                <option value="BS">Bác sĩ</option>
+                <option value="NV">Nhân viên</option>
+                <option value="TD">Thợ điện</option>
+            </select>
+        </div>
+        <fieldset >
+            <legend>Sở thích</legend>
+            <input type="checkbox" > Thể thao
+            <input type="checkbox" > Du lịch 
+            <input type="checkbox" > Âm nhạc
+            <input type="checkbox" > Ẩm thực
+        </fieldset>
+        <br>
+        <div class="form_cla">
+            <label for="">Ghi chú</label>
+            <textarea name="" id="" cols="92" rows="5" class="form_ct"></textarea>
+        </div>
+        <hr>
+        <div class="form-gr-button">
+            <button type="submit">Đăng nhập</button>
+            <button type="reset" >Nhập lại</button>
+        </div>  
+    </form>
+</body>
+</html>

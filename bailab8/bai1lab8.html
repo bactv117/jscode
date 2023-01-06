@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    // tải lên 1 file
+    <!-- <input type="file" onchange="uploadFile(this.file)" />
+    <div id="message"></div>
+    <script>
+      let message = document.getElementById("message");
+      function uploadFile(file) {
+        console.log(file[0]);
+        message.innerText = file[0].name;
+      }
+    </script> -->
+
+    // tải lên nhiều file
+    <input type="file" multiple onchange="uploadFile(this.file)" />
+    <div id="message"></div>
+    <script>
+      let message = document.getElementById("message");
+      function uploadFile(file) {
+        for (let i = 0; i < file.length; i++) {
+          message.innerHTML += file[i].name + "<br>";
+        }
+      }
+    </script>
+  </body>
+</html>

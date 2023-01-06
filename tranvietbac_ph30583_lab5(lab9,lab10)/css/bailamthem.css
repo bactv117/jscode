@@ -1,0 +1,17 @@
+.form-a{
+    font-size: 25px;
+    
+}
+.form-c{
+    border:3px solid palevioletred;
+    background-color: white;
+}
+.form-button{
+    background-color: palevioletred;
+    font-size: larger;
+    border-style: hidden;
+    position: fixed;right:150px;
+    color:white;
+    font-weight: bold;
+    text-transform: inherit;
+}

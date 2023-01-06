@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.liver{
+    width: 1020px;
+    margin: auto;
+}
+
+header{
+    height: 340px;
+    background-image: url('../img/3.png');
+    
+}
+
+.liver .ds{
+    background-color: orangered;
+    text-align: center;
+    line-height: 45px;
+}
+
+.ds ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.ds ul li a{
+    display: block;
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.ds ul li a:hover{
+    background-color: green;
+    color: yellow;
+}
+
+.tot{
+    position: absolute;
+    box-shadow: 0 0 1px black;
+    width: 150px;
+    list-style: none;
+    background-color: green;
+    display: none;
+}
+
+.tot a{
+    color: black;
+    text-align: left;
+    border-bottom: 1px solid yellow;
+}
+
+.liver li:hover .tot{
+    display: block;
+}
+
+iframe[name=page]{
+    width: 100%;
+    min-height: 400px;
+}
+
+.liver article{
+    min-height: 400px;
+    width: 75%;
+    background-color: white;
+    float: left;
+}
+
+aside{
+    float: right;
+    width: 20%;
+}
+
+aside ul{
+    padding: 0;
+    margin: 5px;
+    list-style: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px gray;
+}
+
+aside a{
+    background: url('image.png') no-repeat 10px center;
+    display: block;
+    border-bottom: 1px dotted orangered;
+    color: orangered;
+    font-variant: small-caps;
+    font-size: large;
+    text-decoration: none;
+    padding: 8px 5px 8px 30px;
+}
+
+aside a:hover{
+    background: url('image.png') no-repeat 10px center;
+    border-bottom: 1px dotted white;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+.liver footer{
+    border-top: 5px double orangered;
+    line-height: 50px;
+    background-color: lightcyan;
+    text-align: center;
+    font-variant: small-caps;
+    clear: both;
+}

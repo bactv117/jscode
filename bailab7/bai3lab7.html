@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="wrapper"></div>
+    <form action="anotherpage.html" method="get" onsubmit="return valform()">
+      <input
+        type="text"
+        name="firstName"
+        id="firstName"
+        placeholder="First name"
+      />
+      <br />
+      <input
+        type="text"
+        name="lastName"
+        id="lastName"
+        placeholder="Last name"
+      />
+      <br />
+      <input type="text" name="age" id="age" placeholder="Age" /><br />
+      <input type="submit" value="submit" />
+    </form>
+
+    <script>
+      function valform() {
+        var p = event.target.children;
+        if (p.firstName.value == "") {
+          message("Need a first name!!");
+          return false;
+        }
+        if (p.lastName.value == "") {
+          message("Need a last name!!");
+          return false;
+        }
+        if (p.age.value == "") {
+          message("Need an age!!");
+          return false;
+        }
+        return true;
+      }
+
+      function message(m) {
+        document.getElementById("wrapper").innerHTML = m;
+      }
+
+      let q = window.location.search;
+      let params = new URLSearchParams(q);
+      for (let p of params) {
+        console.log(p);
+        alert(p);
+      }
+      console.log(name);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+h1{
+    color: green;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+div{
+    width: 700px;
+}
+
+div nav{
+    float: right;
+    margin-top: -16px;
+}
+
+.text{
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.for{
+    padding: 5px;
+    width: 300px;
+}
+
+.fa{
+    padding: 5px;
+    width: 98%;
+}
+
+.fo{
+    width: 99%;
+}
+
+.tu{
+    text-align: center;
+}
+
+.tu button{
+    background-color: blue;
+}

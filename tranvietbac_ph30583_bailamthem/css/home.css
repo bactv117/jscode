@@ -1,0 +1,62 @@
+/* Reset tất cả các thẻ HTML */
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1020px;
+    /* để website vào giữa */
+    margin: auto;
+}
+
+header {
+   background-image: url(../4.jpg);
+   width: 1020px;
+   height: 100px;
+   margin-top: 30px;
+}
+nav {
+    line-height: 40px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    margin-top: -10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+aside ul{
+    float: left;
+    margin-left: 20px;
+}
+
+article {
+    width: 60%;
+    background-color: orangered;
+    height: 400px;
+    float: left;
+}
+
+aside {
+    width: 20%;
+    background-color: pink;
+    height: 400px;
+    float: left;
+}
+
+footer {
+    clear: both;
+    background-color: yellow;
+    height: 50px;
+    text-align: center;
+}

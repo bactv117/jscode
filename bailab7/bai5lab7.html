@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bai5lab7.css" />
+  </head>
+  <body>
+    <form onsubmit="return kiem_tra()">
+      <h1>ĐẶT HÀNG</h1>
+      <div>
+        <label>Sản phẩm</label>
+        <input type="text" id="san_pham" />
+      </div>
+
+      <div id="loai">
+        <label>Loại</label>
+        <select>
+          <option>XL</option>
+          <option>L</option>
+          <option>M</option>
+          <option>S</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Đơn giá</label>
+        <input type="text" id="don_gia" />
+      </div>
+
+      <div>
+        <label>Nơi nhận hàng</label>
+        <input
+          type="radio"
+          name="dia_chi"
+          id="dia_chi"
+          onclick="hien_thi(false)"
+        />Nội Thành
+        <input
+          type="radio"
+          name="dia_chi"
+          id="dia_chi"
+          onclick="hien_thi(true)"
+        />Ngoại Thành
+      </div>
+
+      <div id="phi_vc">
+        <label>Phí vận chuyển</label>
+        <input type="text" />
+      </div>
+
+      <hr />
+
+      <div><button type="submit">Đặt mua</button></div>
+    </form>
+
+    <script src="js/bai5lab7.js"></script>
+  </body>
+</html>

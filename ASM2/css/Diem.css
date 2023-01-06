@@ -1,0 +1,40 @@
+body{
+    width: 1000px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: green;
+}
+
+nav{
+    border-top: 5px double orangered;
+}
+
+.bi{
+    padding: 10px 10px;
+}
+
+.bi label{
+    display: block;
+    font-size: 20px;
+}
+
+.bi .ds{
+    width: 500px;
+    line-height: 20px;
+}
+
+.bi .ds:hover{
+    background-color: yellow;
+}
+
+.bu{
+    padding-top: 10px;
+}
+
+.bu button:hover{
+    background-color: green;
+    color: red;
+}

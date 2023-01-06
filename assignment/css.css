@@ -1,0 +1,170 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    padding: 10px;
+
+}
+#layout{
+    max-width: 1080px;
+    margin: 0px auto;
+   box-shadow: 0 0 10px red;
+    
+}
+
+header{
+   
+    background-image: url(img/xBanner1-1.png.pagespeed.ic.exagkVtqz9.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+    width: auto;
+    height: 250px;
+    background-color: rgb(251, 255, 0);
+    text-align: center;
+
+    
+}
+header>input{
+    width: 70%;
+   
+
+}
+header>button{
+    background-color: black;
+    color: white;
+   
+}
+header>.tieude{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid black;
+ 
+}
+nav{
+    width: auto;
+    height: 50px;
+   background-color: orange;
+}
+
+nav >ul {
+    list-style: none;  
+    margin: 0px;
+}
+nav>ul>li{
+    text-align: center;
+    display: inline-block;
+   
+   
+
+    
+}
+nav>ul>li>a{
+    margin: 0 40px ;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+nav>ul>li>a:hover{
+    background-color: greenyellow;
+    color: red;
+}
+
+article{
+    width: 70%;
+    height: 700px;
+    float: left;
+    background-color: white;
+    
+}
+article>img{
+    width: 600px;
+    height: 200px;
+    
+    margin: 0 80px;
+}
+
+article>.td{
+    color: rgb(22, 22, 194);
+    text-align: center;
+}
+article>.td:hover{
+    color: red;
+}
+article>h1{
+    color: red;
+    
+   text-align: center;
+}
+article>h1:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+aside{
+    width: 30%;
+    height: 700px;
+    float: right;
+    background-color:rgb(240, 240, 240);
+    
+}
+aside>.menu_dung{
+   width: auto;
+   height: 700px;
+   
+}
+aside>.menu_dung>.ten{
+    background-color: red;
+    text-align: center;
+    height: 40px;
+    margin: 10px
+}
+aside>.menu_dung>.ten:hover{
+    background-color: greenyellow;
+    color: red;
+}
+aside>.menu_dung>.noidung{
+   margin: 10px;
+   height: 80px;
+  
+}
+aside>.menu_dung>.noidung>img{
+    height: 60px;
+    float: left;
+    margin: 0 0 10px;
+    
+}
+aside>.menu_dung>.noidung>p{
+    margin:  0 10px;
+    color: red;
+    
+}
+aside>.menu_dung>.noidung>p>a{
+    text-decoration: none;
+}
+aside>.menu_dung>.noidung>p>a:hover{
+    background-color: yellow;
+    color: red;
+}
+footer{
+    width: auto;
+    height: 50px;
+    background-color: orange;
+   
+    clear: both;
+}
+.dk{
+    width: auto;
+}
+
+/*bai2" thiết kế trnag giới thiệu*/
+
+
+
+
+
+
+
+
+
+
+
